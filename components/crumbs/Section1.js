@@ -92,7 +92,7 @@ const Block = styled.div`
         box-shadow: -1.216px 6.894px 15px 0 rgb(37 117 252 / 20%);
         border-radius: 0 0 5px 5px;
         background-color: #fff;
-        padding: 10px 20px;
+        padding: 18px 20px;
         margin: 0 10px;
     }
     ul {

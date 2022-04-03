@@ -25,7 +25,7 @@ const SectionForm = () => {
 
     return (
         <Section>
-            <div class="main_section">
+            <div className="main_section">
                 <h2>Сломался любимый девайс? Приедем и починим. Просто оставьте заявку!</h2>
                 <form>
                     {(emailDirty && emailError) && <div style={{color: 'red'}}>{emailError}</div>}
