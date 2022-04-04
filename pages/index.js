@@ -1,6 +1,7 @@
 import Section1 from '../components/crumbs/Section1';
 import Section2 from '../components/crumbs/Section2';
 import Section3 from '../components/crumbs/Section3';
+import Section4 from '../components/crumbs/Section4';
 import Section_form from '../components/crumbs/Section_form';
 import Section_slider from '../components/crumbs/Section_slider';
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Section2 />
       <Section3 />
       <Section_form />
+      <Section4 />
     </div>
   )
 }

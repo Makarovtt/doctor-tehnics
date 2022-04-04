@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../crumbs/Footer";
 import Header from "../crumbs/Header";
 
 const Layout = ({children}) => {
@@ -13,6 +14,7 @@ const Layout = ({children}) => {
             <main >
                 <Header />
                 { children }
+                <Footer />
             </main>
             
         </div>

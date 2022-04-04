@@ -51,7 +51,6 @@ const Section = styled.section`
     margin: 15px 0;
 
     .main_section {
-        max-width: 1140px;
         margin: 0 auto;
         padding: 10px 0;
     }
@@ -65,27 +64,54 @@ const Section = styled.section`
         font-weight: 600;
         line-height: 29px;
     }
+
+    @media (min-width: 120px) {
+        .main_section {
+            max-width: 210px;
+        }
+    }
+    @media (min-width: 320px) {
+        .main_section {
+            max-width: 310px;
+        }
+    }
+    @media (min-width: 576px) {
+        .main_section {
+            max-width: 540px;
+        }
+    }
+    @media (min-width: 768px) {
+        .main_section {
+            max-width: 720px;
+        }
+    }
+    @media (min-width: 992px) {
+        .main_section {
+            max-width: 960px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .main_section {
+            max-width: 1140px;
+        }
+    }
+    @media (min-width: 1400px) {
+        .main_section {
+            max-width: 1320px;
+        }
+    }
 `;
 
 const Block = styled.div`
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+
     display: flex;
     margin: 30px 0;
 
     div {
-        -webkit-flex: 1;
-        -ms-flex: 1;
         flex: 1;
     }
     .left {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
         flex-direction: column;
     }
     h2 {

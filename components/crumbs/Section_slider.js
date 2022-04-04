@@ -11,8 +11,6 @@ const Section_slider = () => {
         <SliderBlock>
             <Swiper
                 spaceBetween={50}
-                width={1200}
-                height={420}
                 slidesPerView={3}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
@@ -28,8 +26,35 @@ const Section_slider = () => {
 export default Section_slider;
 
 const SliderBlock = styled.section`
-    .swiper {
-        width: 1200px;
+    background: #eee;
+    height: 420px;
+    /* .swiper {
+        max-width: 1200px;
         height: 420px;
+    } */
+    @media (min-width: 576px) {
+        .swiper {
+            max-width: 540px;
+        }
+    }
+    @media (min-width: 768px) {
+        .swiper {
+            max-width: 720px;
+        }
+    }
+    @media (min-width: 992px) {
+        .swiper {
+            max-width: 960px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .swiper {
+            max-width: 1140px;
+        }
+    }
+    @media (min-width: 1400px) {
+        .swiper {
+            max-width: 1200px;
+        }
     }
 `;

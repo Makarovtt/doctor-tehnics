@@ -74,7 +74,6 @@ const Section = styled.section`
     background-color: #c6d4f5;
 
     .main_section {
-        max-width: 1140px;
         margin: 0 auto;
         padding: 10px 0;
     }
@@ -99,5 +98,41 @@ const Section = styled.section`
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
+    }
+
+    @media (min-width: 120px) {
+        .main_section {
+            max-width: 210px;
+        }
+    }
+    @media (min-width: 320px) {
+        .main_section {
+            max-width: 310px;
+        }
+    }
+    @media (min-width: 576px) {
+        .main_section {
+            max-width: 540px;
+        }
+    }
+    @media (min-width: 768px) {
+        .main_section {
+            max-width: 720px;
+        }
+    }
+    @media (min-width: 992px) {
+        .main_section {
+            max-width: 960px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .main_section {
+            max-width: 1140px;
+        }
+    }
+    @media (min-width: 1400px) {
+        .main_section {
+            max-width: 1320px;
+        }
     }
 `;

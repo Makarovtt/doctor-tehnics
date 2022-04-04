@@ -130,9 +130,19 @@ const HeaderBlock = styled.header`
         margin: 0 7px;
     }
     .icon_soc {
-        //display: flex;
+        margin: 0 4px;
     }
 
+    @media (min-width: 120px) {
+        .main {
+            max-width: 210px;
+        }
+    }
+    @media (min-width: 320px) {
+        .main {
+            max-width: 310px;
+        }
+    }
     @media (min-width: 576px) {
         .main {
             max-width: 540px;
