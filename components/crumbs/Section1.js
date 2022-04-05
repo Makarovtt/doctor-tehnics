@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styled from "styled-components";
 
 const Section1 = () => {
@@ -6,7 +7,11 @@ const Section1 = () => {
         <Section>
             <div className="main_section">
                 <h1>Ремонт цифровой техники</h1>
-                <p>Компания <a href="/" title="Доктор Техникс">Доктор Техникс</a> выполняет ремонт цифровой техники в любом удобном для Вас месте</p>
+                <p>Компания 
+                    <Link href={'/'}>
+                        <a title="Доктор Техникс"> Доктор Техникс </a>
+                    </Link>
+                     выполняет ремонт цифровой техники в любом удобном для Вас месте</p>
                 
                 <Block>
                     <div className="left">
@@ -55,7 +60,6 @@ const Section = styled.section`
         padding: 10px 0;
     }
     p {
-        margin: 15px 0 10px;
         line-height: 1.5;
         text-align: center;
         color: #6a6a6a;
@@ -69,10 +73,13 @@ const Section = styled.section`
         .main_section {
             max-width: 210px;
         }
+        p {
+            margin: 15px 15px 10px;
+        }
     }
     @media (min-width: 320px) {
         .main_section {
-            max-width: 310px;
+            max-width: 480px;
         }
     }
     @media (min-width: 576px) {
@@ -83,6 +90,9 @@ const Section = styled.section`
     @media (min-width: 768px) {
         .main_section {
             max-width: 720px;
+        }
+        p {
+            margin: 15px 0 10px;
         }
     }
     @media (min-width: 992px) {
@@ -104,7 +114,24 @@ const Section = styled.section`
 
 const Block = styled.div`
 
-    display: flex;
+    @media (min-width: 120px) {
+        display: block;
+        ul {
+            margin: 30px 0 20px 0;
+        }
+    }
+    @media (min-width: 768px) {
+        ul {
+            margin: 30px 0 20px 90px;
+        }
+    }
+    @media (min-width: 992px) {
+        display: flex;
+
+        .main_section {
+            max-width: 960px;
+        }
+    }
     margin: 30px 0;
 
     div {
@@ -121,9 +148,7 @@ const Block = styled.div`
         padding: 18px 20px;
         margin: 0 10px;
     }
-    ul {
-        margin: 30px 0 20px 90px;
-    }
+    
     li {
         display: list-item;
         text-align: -webkit-match-parent;
